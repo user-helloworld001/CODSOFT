@@ -23,8 +23,17 @@ while(Play_choice=='Y'):
     print()
 
 
+    player_choice_str=input("Your Choice: ")
 
-    player_choice=int(input("Your Choice: "))
+
+
+    while(player_choice_str==""):
+           player_choice_str=input("Your Choice: ")
+
+
+
+    player_choice=int(player_choice_str)
+           
 
 
     while(player_choice>3 or player_choice<0):
